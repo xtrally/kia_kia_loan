@@ -162,11 +162,13 @@ const pagesContainer = document.querySelector('.pages-container')
 const loginBtn = document.getElementById('login-btn')
 const quick = document.getElementById('quick')
 const BackHome = document.getElementById('back-home')
+const mobileAct = document.getElementById('mobile-act')
 
 pagesContainer.style.display = 'none'
 // pagesContainer.style.display = 'block'
 
 quick.addEventListener('click', registerForm)
+mobileAct.addEventListener('click', registerForm)
 BackHome.addEventListener('click', LoadHome)
 
 function registerForm() {

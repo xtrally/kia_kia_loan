@@ -24,7 +24,7 @@
     min-height: 100vh;
     width: 100%;
     background: red;
-    background-image: url('/dist/img/For-you_Get-a-loan-1-scaled0.jpg');
+    background-image: url('../img/For-you_Get-a-loan-1-scaled0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -425,7 +425,15 @@ select option {
         width: 100%;
     }
 }
+@media (max-width: 1000px) {
+    .register-page {
+        width: 30%;
+    }
+}
   @media (max-width: 1000px) {
+    .register-page {
+        width: 50%;
+    }
     .banner-top {
         padding: 2rem 1rem;
     }
@@ -448,6 +456,12 @@ select option {
     }
     .no-doc {
         padding: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .register-page {
+        width: 60%;
     }
 }
 @media (max-width: 800px) {
@@ -482,11 +496,14 @@ select option {
 }
 }
   @media (max-width: 750px) {
+    .register-page {
+        width: 70%;
+    }
     .logo-footer span {
         font-size: 1.2rem;
     }
     .each-doc-icon h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
   nav ul {
       display: none;
@@ -535,13 +552,13 @@ select option {
         align-items: center;
     }
     .top-no-doc p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .each-doc-icon p {
         font-size: 1.4rem;
     }
     .mid-icon1, .mid-icon2 {
-        margin: 1.5rem 0;
+        margin: 0.5rem 0;
     }
 
     .no-doc-icon svg {
@@ -555,6 +572,9 @@ select option {
     }
 }
 @media (max-width: 600px) {
+    .register-page {
+        width: 80%;
+    }
     .banner-top {
         padding: 2rem 1rem;
     }
@@ -563,10 +583,21 @@ select option {
     }
 }
   @media (max-width: 500px) {
-      /* .banner-top {
-          height: 3000px;
-          display: block;
-      } */
+    .right-foot1 {
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .inner-foot {
+        padding: 2rem 0.2rem;
+    }
+    .no-doc-icon {
+        margin: 3rem auto;
+    }
+    .each-doc-icon svg {
+        width: 50%;
+        height: 50%;
+    }
     .register-page {
         width: 90%;
     }
@@ -594,6 +625,9 @@ select option {
   }
 
   @media (max-width: 350px) {
+    .right-foot1 {
+        width: 90%;
+    }
     .register-page {
         width: 90%;
     }
@@ -609,11 +643,6 @@ select option {
     .register-page label {
         width: 50%!important;
     }
-    .right-foot1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
     
     .eligi {
         padding: 10rem 1.5rem;
@@ -622,7 +651,8 @@ select option {
         padding: 0.6rem 1rem;
     }
     .left-banner-top a {
-        width: 90%;
+        width: 80%;
+        margin: 0.7rem auto;
     }
     
   .loan-calculator-header {
@@ -636,13 +666,16 @@ select option {
 }
 
   @media (max-width: 450px) {
+    .banner-top {
+        padding: 1rem 1rem;
+    }
     .loan-calculator {
         width: 100%;
     }
     .logo-footer {
         flex-direction: column;
         justify-content: center;
-        width: 80%;
+        width: 96%;
         margin: 0 auto;
     }
 
@@ -657,5 +690,12 @@ select option {
     }
     #calculate {
         padding: 1rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .right-foot1 {
+        flex-direction: column;
+        align-items: center;
     }
 }

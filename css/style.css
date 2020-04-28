@@ -211,7 +211,7 @@ nav ul li .real-nav:hover::after {
 }
 
 .loan-calculator-header {
-    background: #ffc604;
+    background: #d3ae36;
     border-radius: 5px;
     padding: 1rem;
     display: flex;
@@ -224,10 +224,10 @@ nav ul li .real-nav:hover::after {
 }
 
 .loan-calculator-header i {
-    color: #ffc604;
+    color: #333;
     border-radius: 5px;
-    font-size: 2rem;
-    background: #0000FE;
+    font-size: 2.2rem;
+    background: #fff;
     padding: 0.3rem 1rem;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -240,7 +240,7 @@ nav ul li .real-nav:hover::after {
     width: 70%;
     font-weight: 600;
     color: #000;
-    background: #d3ae36;
+    background: #fff;
     padding: 0.5rem;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -410,7 +410,7 @@ nav ul li .real-nav:hover::after {
 .eligi {
     width: 100%;
     min-height: 100%;
-    background-image: url('/img/For-you_Get-a-loan-1-scaled0.jpg');
+    background-image: url('../img/For-you_Get-a-loan-1-scaled0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -539,11 +539,12 @@ nav ul li .real-nav:hover::after {
     font-size: 0.7rem;
     margin: 1rem 0;
 }
-.right-foot2 {
+.inner-right-foot2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .right-foot2 i {
     font-size: 3rem;
     color: #0ec143;
@@ -556,19 +557,3 @@ nav ul li .real-nav:hover::after {
     -o-border-radius: 50%;
 }
 
-@-webkit-keyframes blinker {
-    from {opacity: 1.0;}
-    to {opacity: 0.0;}
-  }
-  .blink {
-      text-decoration: blink;
-      -webkit-animation-name: blinker;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-iteration-count:infinite;
-      -webkit-animation-timing-function:ease-in-out;
-      -webkit-animation-direction: alternate;
-  }
-
-  .blink:hover blink {
-      text-decoration: none;
-  }
