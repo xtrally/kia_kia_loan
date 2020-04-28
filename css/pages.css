@@ -1,0 +1,661 @@
+ /* #form2, #form3, #form4, #form5 {
+    display: none;
+} */
+
+.loader-container {
+    width: 100%;
+}
+
+.loaders {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+.loaders img {
+    max-width: 150px;
+    max-height: 90px;
+    margin: 0 auto;
+}
+
+.pages-container {
+    min-height: 100vh;
+    width: 100%;
+    background: red;
+    background-image: url('/dist/img/For-you_Get-a-loan-1-scaled0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay-pages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0000FE;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.pages-inner-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-page {
+    width: 30%;
+    background: #fff;
+    margin: 2rem auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+.register-page input[type="text"], .register-page label {
+    display: block;
+}
+
+.register-page input[type="password"], .register-page label {
+    display: block;
+}
+
+.register-page select, .register-page label {
+    display: block;
+}
+
+.register-page textarea, .register-page label {
+    display: block;
+}
+
+.register-page textarea {
+    background: #ffc604;
+}
+
+.register-page input[type="number"], .register-page label {
+    display: block;
+}
+
+#form1, #form2 {
+    margin: 1rem auto;
+    position: relative;
+}
+
+#form4 {
+    text-align: center;
+}
+
+.form-inner4 {
+    /* background: #333; */
+    padding: 1rem 0;
+}
+
+.form-inner4 h4 {
+    margin: 0.5rem;
+    color: #333;
+}
+
+.form-inner4 p {
+    font-size: 0.8rem;
+    text-align: left;
+    width: 85%;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: #ccc;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.5;
+    padding: 0.3rem 0.5rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.error-msg {
+    font-size: 0.6rem;
+    padding: 0.6rem;
+    width: 90%;
+    background: rgb(241, 237, 237);
+    color: rgb(199, 53, 53);
+    display: none;
+    margin: 0.1rem auto;
+}
+
+.share-to-whatsapp {
+    display: block;
+}
+
+.share-to-whatsapp a {
+    background: #0ec143;
+    padding: 1rem;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.form-inner5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-inner5 h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.form-inner5 p {
+    font-size: 0.8rem;
+    /* margin: 1rem 0; */
+}
+
+.circling {
+    background: #0ec143;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circling i {
+    font-size: 4rem;
+    color: #fff
+}
+
+.register-page input[type="text"], .register-page input[type="password"] {
+    padding: 0.7rem 1rem;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    margin: 0 auto;
+    font-size: 0.7rem;
+}
+
+input {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+select option {
+    font-size: 0.6rem;
+}
+
+.register-page select, .register-page textarea, .register-page input[type="number"] {
+    padding: 0.7rem 1rem;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    margin: 0 auto;
+    font-size: 0.7rem;
+}
+
+.register-page input[type="text"]::placeholder, .register-page input[type="password"]::placeholder {
+    font-weight: 400;
+}
+
+.register-page input[type="text"]:hover, .register-page input[type="password"]:hover,
+.register-page input[type="text"]:active, .register-page input[type="password"]:active,
+.register-page input[type="text"]:focus, .register-page input[type="password"]:focus {
+    border: 1px solid #ffc604;
+}
+
+.top-form {
+    text-align: center;
+    background: #ffc604;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.top-form img {
+    max-width: 170px;
+    max-height: 80px;
+}
+
+.top-form-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2rem;
+}
+
+.top-form-img i {
+    font-size: 3rem;
+}
+
+
+.register-page label {
+    font-size: 0.7rem;
+    background: #ffc604;
+    padding: 0.5rem;
+    width: 20%;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 0.5rem 1rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.register-page label#f-password {
+    width: 30%;
+}
+
+.register-page label#c-password {
+    width: 70%;
+}
+
+.top-form-inner h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-weight: 800 !important;
+    color: #0000FE;
+}
+.top-form p {
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: #000;
+    background: #fff;
+    padding: 1rem;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.login-btn {
+    display: block;
+    background: #ffc604;
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
+    width: 80%;
+    cursor: pointer;
+    outline: none;
+    margin: 1rem auto;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.progress-container {
+    width: 100%;
+    display: block;
+    margin: 1rem 0 7rem;
+    background: #2979FF;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .progressbar {
+    counter-reset: step;
+  }
+  
+  .progressbar li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color: #333;
+    font-size: 0.8rem;
+  }
+  
+  /* Circles */
+  .progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin:  auto auto;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #ff0c04;
+     
+    /* Center # in circle */
+    line-height: 29px;
+  }
+  
+  .progressbar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: orange ;
+    top: 20px; /*half of height Parent (li) */
+    left: -50%;
+    z-index: -1;
+  }
+  
+  .progressbar li:first-child:after {
+    content: none;
+  }
+  
+  .progressbar li.active:before {
+    background: #00E676;
+    content: "✔";  
+  }
+  
+  .progressbar li.active + li:after {
+    background: red;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* RESPONSIVENESS */
+  @media (max-width: 1200px) {
+    .no-doc {
+        padding: 2rem 0rem;
+    }
+    .banner-top {
+        padding: 2rem 2rem;
+    }
+    nav {
+        padding: 1rem 2rem;
+    }
+    .loan-calculator {
+        width: 100%;
+    }
+}
+  @media (max-width: 1000px) {
+    .banner-top {
+        padding: 2rem 1rem;
+    }
+    .loan-calculator {
+        justify-content: center;
+        width: 100%;
+    }
+    nav {
+        padding: 1rem 2.5rem;
+    }
+    .left-banner-top p {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    .left-banner-top a {
+        width: 50%;
+    }
+    .inner-foot {
+        padding: 2rem 1rem;
+    }
+    .no-doc {
+        padding: 1rem;
+    }
+}
+@media (max-width: 800px) {
+    .loan-calculator {
+        width: 70%;
+    }
+    nav {
+        padding: 1rem 1rem;
+    }
+  .banner-top {
+      flex-direction: column;
+      padding: 2rem 2rem;
+    /* background: rgb(163, 219, 6); */
+  }
+  .left-banner-top {
+      width: 100%;
+      /* background: red; */
+  }
+  .left-banner-top h4 {
+      width: 100%;
+  }
+  .loan-calculator-container {
+    width: 100%;
+    justify-content: center;
+}
+.left-banner-top p {
+    width: 100%;
+    font-size: 1.2rem;
+}
+.left-banner-top a {
+    width: 50%;
+}
+}
+  @media (max-width: 750px) {
+    .logo-footer span {
+        font-size: 1.2rem;
+    }
+    .each-doc-icon h3 {
+        font-size: 1.5rem;
+    }
+  nav ul {
+      display: none;
+  }
+
+  .mobile-active {
+      display: block;
+      text-align: center;
+  }
+  .logo img {
+      max-width: 110px;
+      max-height: 50px;
+  }
+    
+    .inner-foot {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .left-footer {
+        opacity: .7;
+    }
+    .left-footer, .right-footer {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 1rem 0;
+        padding: 0 0.2rem;
+    }
+
+    .right-foot1 {
+        /* flex-direction: column; */
+        width: 100%;
+    }
+    .logo-footer {
+        padding: 1rem 0rem;
+    }
+    .no-doc {
+        padding: 2rem;
+    }
+    .no-doc-icon {
+        width: 90%;
+        margin: 1rem auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-no-doc p {
+        font-size: 1.5rem;
+    }
+    .each-doc-icon p {
+        font-size: 1.4rem;
+    }
+    .mid-icon1, .mid-icon2 {
+        margin: 1.5rem 0;
+    }
+
+    .no-doc-icon svg {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (min-width: 600px) {
+    .right-footer {
+        display: flex;
+    }
+}
+@media (max-width: 600px) {
+    .banner-top {
+        padding: 2rem 1rem;
+    }
+    .loan-calculator {
+        width: 80%;
+    }
+}
+  @media (max-width: 500px) {
+      /* .banner-top {
+          height: 3000px;
+          display: block;
+      } */
+    .register-page {
+        width: 90%;
+    }
+    .register-page label {
+        width: 80%!important;
+    }
+    .eligi {
+        padding: 12rem 1.5rem;
+    }
+
+    .eligi input[type="text"] {
+        width: 80%;
+    }
+
+    .eligibility input {
+        width: 80%;
+        display: block;
+    }
+    .inner-eligi h4 {
+        font-size: 1.4rem;
+        padding: 0 0.5rem;
+    }
+
+
+  }
+
+  @media (max-width: 350px) {
+    .register-page {
+        width: 90%;
+    }
+    .top-form-img {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 2rem;
+    }
+    .top-form-img i {
+        margin: 0.5rem 0;
+    }
+    .register-page label {
+        width: 50%!important;
+    }
+    .right-foot1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .eligi {
+        padding: 10rem 1.5rem;
+    }
+    .eligi input[type="submit"] {
+        padding: 0.6rem 1rem;
+    }
+    .left-banner-top a {
+        width: 90%;
+    }
+    
+  .loan-calculator-header {
+    flex-direction: column;
+    padding: 1rem 0rem;
+}
+.loan-calculator-header i {
+    margin: 0.5rem 0;
+
+}
+}
+
+  @media (max-width: 450px) {
+    .loan-calculator {
+        width: 100%;
+    }
+    .logo-footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .logo-footer img {
+        margin: 0.2rem auto 2rem;
+    }
+}
+
+  @media (max-width: 300px) {
+    .eligi {
+        padding: 14rem 1.5rem;
+    }
+    #calculate {
+        padding: 1rem;
+    }
+}
