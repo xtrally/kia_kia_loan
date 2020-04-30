@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kia-Kia Loan</title>
+    <link rel="icon" type="image/png" href="img/kiakia-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="/font/css/font-awesome.min.css"> -->
+</head>
+<body>
+
+    <!-- PAGES -->
+    <div class="pages-container">
+        <div class="overlay-pages"></div>
+        <div class="pages-inner-container">
+            <div class="register-page">
+                <div class="top-form"> 
+                    <div class="top-form-img">
+                        <a href="/dist/index.html"><img src="img/kiakia-logo-yellow.png" alt=""></a>
+                    <h4>Request Loan</h4>
+                     <i class="fa fa-file-text"></i>
+                    </div>
+                <div class="top-form-inner">
+                
+                <p id="login-p1">Complete the online loan form below: Please take your time to review every inputs before you hit proceed...</p>
+                </div>
+                </div>
+                <div class="loader-container">
+                <div class="loaders">
+                    <img src="img/Bounce-Bar-Preloader-1.gif" alt="">
+                </div>
+                </div>
+                <!-- First Register Form -->
+                <form id="form1">
+                    <div id="name">
+                        <label for="name">Name:</label>
+                        <input type="text" required id="name" placeholder="Enter Your Full Name">
+                        <!-- <div id="error-msg"></div> -->
+                    </div>
+                    <div class="form-inner">
+                        <label for="email">Email:</label>
+                        <input type="text" id="form1-email" placeholder="Enter Your Email">
+                        <div class="error-msg"></div>
+                    </div>
+                    <input class="login-btn" type="submit" value="Proceed &#8608;" >
+                </form>
+                <!-- Second Register Form -->
+                <form id="form2">
+                    <div class="form-inner">
+                        <label for="mobile" id="mid-label">Mobile No:</label>
+                        <input type="number" required id="mobile" placeholder="+2348008896091">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="form-inner">
+                        <label for="email">DOB:</label>
+                        <input type="number" required placeholder="Date Of Birth 04.04.1990">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="form-inner">
+                        <label for="email">Gender:</label>
+                        <select required name="" id="gender">
+                        <option value="1">Male</option>
+                        <option value="1">Female</option>
+                        <option value="1">Prefer Not TO Say</option>
+                    </select>
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="form-inner">
+                        <label for="email">State:</label>
+                        <input type="text" placeholder="* Optional">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="form-inner">
+                        <label for="email">City:</label>
+                        <input type="text" required placeholder="Enter Your City">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="form-inner">
+                        <label for="email">Address:</label>
+                        <input type="text" required class="email" placeholder="Enter Your Address">
+                        <div class="error-msg"></div>
+                    </div>
+                    
+                    <input class="login-btn" type="submit" value="Proceed &#8608;" >
+                   
+                </form>
+                <!-- Third Register Form -->
+
+                <form id="form3">
+                    <div class="form-inner4">
+                        <div class="progress-container">
+                            <ul class="progressbar">
+                              <li class="active">Step 1</li>
+                              <li>Step 2</li>
+                              <li>Step 3</li>
+                            </ul>
+                          </div>
+                        <label for="ac-no">Acc No:</label>
+                        <input type="number" required class="email" placeholder="Enter Your Full Name">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div id="form-inner">
+                        <label for="email">Bank:</label>
+                        <select required name="" id="bank">
+                            <option value="1">Access Bank PLC</option>
+                            <option value="1">ECO BANK</option>
+                            <option value="1">FIRST BANK PLC</option>
+                            <option value="1">FCMB</option>
+                            <option value="1">GTB</option>
+                            <option value="1">HERITAGE BANK</option>
+                            <option value="1">STANBIC IBTC</option>
+                            <option value="1">STERLING</option>
+                            <option value="1">UBA</option>
+                            <option value="1">UNION BANK</option>
+                            <option value="1">ZENITH</option>
+                        </select>
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="form-inner">
+                        <label for="email" id="low-label">Possible Amount:</label>
+                        <input type="number" required class="number" placeholder="Up to how much ">
+                        <div class="error-msg"></div>
+                    </div>
+
+                    <div class="form-inner">
+                        <label for="email" id="long-label">* Summary : Tell us in brief why Kiakia-loan should consider your application.</label>
+                        <textarea id="Summary cols="30" rows="10" placeholder="* optional"></textarea>
+                        <div class="error-msg"></div>
+                    </div>
+                   
+                    <input class="login-btn" type="submit" value="Proceed &#8608;" >
+                   
+                </form>
+                 <!-- Fourth Register Form -->
+                 <form id="form4">
+                    <div class="form-inner4">
+                        <div class="progress-container">
+                            <ul class="progressbar">
+                              <li class="active">Step 1</li>
+                              <li class="active">Step 2</li>
+                              <li>Step 3</li>
+                            </ul>
+                          </div>
+                        <h4>You're almost there!</h4>
+                        <p>As Kia-kia Ltd doesn't mandate a collateral, a salary account or any form of legal documents. So in return, we requires all our beneficiaries to complete a simple task to qualify for the application review. Even though it is not a must, but we strongly advice you complete this task as it'll move up your application review way closer and you stand the chance of Kia-kia disbursing into your account under 20hours.<p>
+                            <span>Below is your task: Kia-kia Loan cares - Help us reach more people in need - Share to at least 10 groups or people on whatsapp.</span>
+                            <p>Please note, that if the share doesn't up to 10, you won't be able to proceed as the final submit will not be visible. make sure you share up to the required number of time, then the final submit link will reveal itself.</p>
+                        <div class="share-to-whatsapp">
+                            <a id="whatsapp-btn" target="blank" href="whatsapp://send?text=Never Go Broke Again During This Lock Down Period!!%0A%0ADo You Know You Can Get 2000- 50000 Quick Loan, Anytime, Anywhere.%0A%0A❌No BVN Submission,%0A%0AImageImage ❌No Interest%0A%0A❌No pApp Downloading,%0A%0A ❌No long wait times.%0A%0A*✅Just your smartphone *%0A%0A*✅ Instant approval *%0A%0A*✅3-6months repayment *%0A%0AGet the Loan within few minutes and you can choose to repay within 3 to 6 months.%0A%0AAPPLY NOW%0A%0Ahttps://kiakialoan.com" data-original-title="whatsapp" rel="tooltip" class="btn btn-whatsapp" data-placement="left"><i class="fa fa-whatsapp"></i> Share On whatsapp</a>
+                        </div>
+                    </div>
+
+                    <input class="login-btn confirm-sign-up" type="submit" value="Submit Request &#8608;" >
+                   
+                </form>
+                 <!-- Fifth Register Form -->
+                 <form id="form5">
+                    <div class="form-inner5">
+                        <h4>Congratulations!</h4>
+                        <p>Your loan Request is being received. One of our agents will contact you soon for verification.</p>
+                        <div class="circling">
+                            <i class="fa fa-check"></i>
+                        </div>
+                    </div>
+                    
+                   
+                    <input class="login-btn" id="back-home" type="submit" value="Back To Home &#8592;" >
+                   
+                </form>
+                <!-- Pop-up  -->
+                <div id="covid-pop">
+                    <div class="inner-covid-pop">
+                        <h4>Here's what to do!</h4>
+                        <p>We strongly advice user not to fill our loan request form more than once, even though we always ensure proper measures are taken when sorting out data response. But, in a case where you've submitted your request and you've not heard back from us for 24hours, then, that means something is not right, either, there was a typo error while you were inserting your details, or your request is at the bottom of our data table, in such a rare cases, then loan request resubmission can be considered. Note: Always make sure you waited at least 24hours before you re-apply so our filter bot won't flag your request as invalid.</p>
+                    </div>
+                    <a href="#" class="btn-covid">Re-submit Request &#8592;</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- HOMEPAGE  -->
+    <main class="homepage">
+        <div class="header-container">
+            <video class="top-vid" src="img/1019750314-preview.mp4" autoplay="true" loop="true" muted></video>
+            <div class="overlay"></div>
+            <div class="header-inner">
+            <header>
+                <!-- Navbar -->
+                <nav>
+                    <div class="logo">
+                        <img src="img/kiakia-logo.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a class="real-nav" href="#">How it works</a></li>
+                        <li><a class="real-nav" href="#" id="login-btn">Our Disclaimer</a></li>
+                        <li><a class="real-nav" href="#">About US</a></li>
+                        <li><a href="#" id="quick" class="actives">Quick Loan</a></li>
+                    </ul>
+                     <a href="#" id="mobile-act" class="mobile-active">Quick Loan</a>
+                </nav>
+
+                <!-- Nav  -->
+                <div class="banner-top">
+                    <div class="left-banner-top">
+                        <h4>Get a loan in less than 24 hours.</h4>
+                        <p>Our Personal Loans and Micro-Business Loans are designed to conveniently meet your financial needs. So, whether you’re employed or run your own business, you can get a loan of up to ₦6,000,000.</p>
+                        <a href="#" id="get-started">Get Started</a>
+                    </div>
+                    <div class="loan-calculator-container">
+                        <div class="loan-calculator">
+                            <div class="loan-calculator-header">
+                             <i class="fa fa-tablet monies"></i>
+                              <p class="loan-span">Curious? Make Use Of Our Tool. Free Loan Calculator</p>
+                            </div>
+                            <div class="main-calculator">
+                            <div class="how-much">
+                          <label for class="loanenquiry">How much do you need?</label>
+                          <div class="inner-how-much">
+                           <input type="number" class="amounts" min="10000" max="3000000" placeholder="Enter Amount..." id="loan">
+                            <span class="white white1">NGN</span>
+                            </div>
+                            </div>
+                            <div class="how-month">
+                            <label for class="durationenquiry">For How Many Month(s)?</label>
+                            <div class="inner-how-much">
+                            <input type="number" min="1" max="12" placeholder="Enter No Of Months..." id="duration"> 
+                            <span class="white white2">NOM</span>
+                            </div>
+                            </div>
+                            <button id="calculate">Calculate Loan</button>
+                          </div>
+                          <div id="result-container">
+                              <div id="result"></div>
+                              <img id="calc-loader" src="img/loading.gif" alt="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <section class="no-doc">
+        <div class="top-no-doc">
+            <i class="fa fa-caret-right"></i><i class="fa fa-caret-right"></i><i class="fa fa-caret-right"></i>
+            <h4>Borrow better with Kia-Kia</h4>
+            <p>Gaining access to funds does not have to be so difficult. Here’s why...</p>
+        </div>
+        <div class="no-doc-icon">
+
+            <div class="each-doc-icon">
+                <svg width="127px" height="127px" viewBox="0 0 127 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+                    <title>ic_documentation</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="For_You_get_a_loan" transform="translate(-229.000000, -3832.000000)">
+                            <g id="ic_documentation" transform="translate(229.000000, 3832.000000)">
+                                <g>
+                                    <rect id="Rectangle-Copy-14" fill="#2DA14E" x="0" y="0" width="127" height="127" rx="12"></rect>
+                                    <polygon id="Rectangle" stroke="#FFFFFF" stroke-width="2" points="45.72 40.64 71.12 40.64 81.28 50.8 81.28 86.36 45.72 86.36"></polygon>
+                                    <line x1="53.975" y1="55.245" x2="71.755" y2="55.245" id="Line-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></line>
+                                    <line x1="53.975" y1="60.96" x2="71.755" y2="60.96" id="Line-3-Copy" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></line>
+                                    <line x1="53.975" y1="66.04" x2="71.755" y2="66.04" id="Line-3-Copy-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></line>
+                                    <line x1="53.975" y1="71.12" x2="64.135" y2="71.12" id="Line-3-Copy-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></line>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p>Documentation</p>
+                <h3>None</h3>
+             </div>
+
+             <div class="each-doc-icon mid-icon2">
+                <svg width="127px" height="127px" viewBox="0 0 127 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+                    <title>ic_rewarding_offers</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="For_You_get_a_loan" transform="translate(-515.000000, -3959.000000)">
+                            <g id="ic_rewarding_offers" transform="translate(515.000000, 3959.000000)">
+                                <g>
+                                    <rect id="Rectangle-Copy-15" fill="#E8AC32" x="0" y="0" width="127" height="127" rx="12"></rect>
+                                    <g id="Group-6" transform="translate(36.830000, 31.750000)" stroke="#FFFFFF" stroke-width="2">
+                                        <path d="M3.55271368e-14,44.87164 L3.55271368e-14,59.80684 L10.07745,59.80684 C11.98118,59.80684 14.04493,61.45911 21.73097,61.45911 C29.41447,61.45911 32.76219,60.55106 33.05175,58.85688 C33.34131,57.1627 33.00984,56.33339 32.34817,55.63489 C32.34817,55.63489 35.57016,54.89067 35.57016,52.45227 C35.57016,50.01641 34.16554,49.55921 34.16554,49.55921 C34.16554,49.55921 36.7284,48.53051 36.7284,46.17212 C36.7284,43.82008 34.95167,43.15587 34.95167,43.15587 C34.95167,43.15587 36.7284,42.70121 36.7284,39.93261 C36.7284,37.16782 33.9598,36.83762 33.9598,36.83762 L23.88108,36.83762 C22.63902,36.83762 22.14245,35.34918 23.01113,33.36671 C23.88108,31.38297 24.91359,28.69692 24.91359,26.63317 C24.91359,24.56688 23.96109,21.59 21.64715,21.59 C20.7391,21.59 20.82038,22.00402 20.57273,23.11781 C20.32508,24.23668 18.92046,27.87269 16.35887,31.17469 C13.79601,34.47796 12.35202,36.58743 9.83234,40.47109 C7.31266,44.35348 4.50342,44.85132 2.89179,44.85132 C1.28016,44.85132 3.55271368e-14,44.87164 3.55271368e-14,44.87164 Z" id="Stroke-1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M24.13,22.86 C24.9766667,16.0866667 25.8233333,12.2766667 26.67,11.43 C27.94,10.16 36.83,21.59 36.83,21.59 C36.83,21.59 35.1366667,26.67 31.75,36.83" id="Path-3"></path>
+                                        <path d="M20.32,24.13 C18.6266667,11.43 17.78,5.08 17.78,5.08 C17.78,5.08 26.67,2.54 33.02,3.81 C33.02,3.81 33.02,8.04333333 33.02,16.51" id="Path-4"></path>
+                                        <path d="M36.83,21.59 C41.0633333,12.2766667 42.7566667,7.19666667 41.91,6.35 C40.64,5.08 30.48,0 27.94,0 C27.94,0 26.67,2.54 27.94,3.81" id="Path-5"></path>
+                                        <path d="M35.56,25.4 C36.4066667,26.2466667 37.2533333,27.0933333 38.1,27.94 C38.1,27.94 36.83,30.9033333 34.29,36.83" id="Path-6"></path>
+                                        <polyline id="Path-7" points="41.91 8.89 45.72 13.97 36.83 26.67"></polyline>
+                                        <path d="M43.18,17.78 C46.5666667,12.7 48.6833333,10.16 49.53,10.16 C49.53,10.16 49.53,21.59 52.07,24.13 C52.07,24.13 40.64,29.21 36.83,38.1" id="Path-8"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p>Application Process</p>
+                <h3>Swift and Easy</h3>
+             </div>
+
+             <div class="each-doc-icon mid-icon2">
+                <svg width="127px" height="127px" viewBox="0 0 127 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+                    <title>ic_tenure</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="For_You_get_a_loan" transform="translate(-799.000000, -3832.000000)">
+                            <g id="ic_tenure" transform="translate(799.000000, 3832.000000)">
+                                <g>
+                                    <rect id="Rectangle-Copy-18" fill="#F96A51" x="0" y="0" width="127" height="127" rx="12"></rect>
+                                    <g id="Group-7" transform="translate(39.370000, 49.530000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <polygon id="Stroke-1" points="0.897509 26.947749 46.199679 26.947749 46.199679 0.897509 0.897509 0.897509"></polygon>
+                                        <path d="M46.20006,6.242177 C43.24731,6.242177 40.8559,3.849497 40.8559,0.898017" id="Stroke-2"></path>
+                                        <path d="M40.855265,26.947241 C40.855265,23.994491 43.247945,21.603081 46.199425,21.603081" id="Stroke-3"></path>
+                                        <path d="M0.898017,6.242177 C3.850767,6.242177 6.242177,3.849497 6.242177,0.898017" id="Stroke-4"></path>
+                                        <path d="M6.242812,26.947241 C6.242812,23.994491 3.850132,21.603081 0.898652,21.603081" id="Stroke-5"></path>
+                                        <path d="M30.880939,14.270736 C30.880939,10.224262 27.595449,6.939026 23.548594,6.939026 C19.501739,6.939026 16.216249,10.224262 16.216249,14.270736 C16.216249,18.31721 19.501739,21.602446 23.548594,21.602446 C27.595449,21.602446 30.880939,18.31721 30.880939,14.270736 Z" id="Stroke-6"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p>Tenure</p>
+                <h3>Flexible</h3>
+             </div>
+             <div class="each-doc-icon">
+                <svg width="127px" height="127px" viewBox="0 0 127 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+                    <title>ic_interest</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="For_You_get_a_loan" transform="translate(-1084.000000, -3959.000000)">
+                            <g id="ic_interest" transform="translate(1084.000000, 3959.000000)">
+                                <g>
+                                    <rect id="Rectangle-Copy-17" fill="#010065" x="0" y="0" width="127" height="127" rx="12"></rect>
+                                    <g id="Group-5" transform="translate(45.720000, 45.720000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <line x1="33.816417" y1="0.898017" x2="0.898017" y2="33.816417" id="Stroke-1"></line>
+                                        <path d="M24.075009,28.94584 C24.075009,31.633922 26.257377,33.81629 28.945459,33.81629 C31.633541,33.81629 33.815909,31.633922 33.815909,28.94584 C33.815909,26.257758 31.633541,24.07539 28.945459,24.07539 C26.257377,24.07539 24.075009,26.257758 24.075009,28.94584 Z" id="Stroke-2"></path>
+                                        <path d="M0.898144,5.76834 C0.898144,8.456422 3.080512,10.63879 5.768594,10.63879 C8.456676,10.63879 10.639044,8.456422 10.639044,5.76834 C10.639044,3.080258 8.456676,0.89789 5.768594,0.89789 C3.080512,0.89789 0.898144,3.080258 0.898144,5.76834 Z" id="Stroke-3"></path>
+                                        <polyline id="Stroke-4" points="26.96972 0.898017 33.81629 0.898017 33.81629 7.744587"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p>Interest</p>
+                <h3>From 3%</h3>
+             </div>
+        </div>
+    </section>
+
+    <!-- Check Eligibility -->
+    <section class="eligi">
+        <div class="eligi-overlay"></div>
+        <div class="inner-eligi">
+            <div class="eligibility">
+            <h4>Get up to #6million On Kia-Kia Loan Extra Package</h4>
+            <p>Fill in your application | Undergo less down 24hours review | Your Account is loaded.</p>
+            <div id="below-form">
+                <input type="text" required class="below-email" placeholder="Enter Your Email Address">
+                <div class="error-msg"></div>
+                <input id="below-btn" type="submit" value="Request Instant Loan">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner-foot">
+            <div class="left-footer">
+                <div class="logo-footer">
+                    <img src="img/kiakia-dark.png">
+                    <div class="inner-logo-footer">
+                    <p>&copy; 2020 Kia-kia. All Rights Reseved.</p>
+                    <span>Kia-kia Loan is a financial institution which provides retail loans for consumers in need of quick financial solutions.
+                        The company is focused on delivering services that can be accessed online, from any internet-enabled device anywhere within Nigeria.</span>
+                        </div>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="right-foot1">
+                    <div class="inner-foot1">
+                    <h4>for you</h4>
+                    <a href="#">Get a loan</a>
+                    <a href="#">Repay a loan</a>
+                    <a href="#">Faq</a>
+                    </div>
+                    <div class="inner-foot2">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy</a>
+                        <a href=".">Contact Us</a>
+                        </div>
+                </div>
+                <div class="right-foot2 blink">
+                    <div class="inner-right-foot2">
+                        <a href="https://twitter.com/intent/tweet?text=Never Go Broke Again During This Lock Down Period!!%20Do You Know You Can Get 2000- 50000 Quick Loan, Anytime, Anywhere.%20❌No BVN Submission,%20ImageImage ❌No Interest%20❌No App Downloading,%20 ❌No long wait times.%20*✅Just your smartphone *%20*✅ Instant approval *%20*✅3-6months repayment *%20Get the Loan within few minutes and you can choose to repay within 3 to 6 months.%20APPLY NOW%20https://kiakialoan.com"><i class="fa fa-retweet" id="retweet"></i></a>
+                        <a href="whatsapp://send?text=Never Go Broke Again During This Lock Down Period!!%0A%0ADo You Know You Can Get 2000- 50000 Quick Loan, Anytime, Anywhere.%0A%0A❌No BVN Submission,%0A%0AImageImage ❌No Interest%0A%0A❌No App Downloading,%0A%0A ❌No long wait times.%0A%0A*✅Just your smartphone *%0A%0A*✅ Instant approval *%0A%0A*✅3-6months repayment *%0A%0AGet the Loan within few minutes and you can choose to repay within 3 to 6 months.%0A%0AAPPLY NOW%0A%0Ahttps://kiakialoan.com"><i class="fa fa-whatsapp" id="what-icon"></i></a>
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+
+    <div class="covid-bar">
+        <div class="covid-notice">
+            <div class="covid">
+                <p>COVID UPDATES: Dear customer, please note, that your loan request may take more than 24hours, which is very unusual, as our platforms is very congested with huge request due to the pandemic around. Please bear with us. If after 24hours, you still haven't heard from us, then <a href="#" id="help-link">Here's what might help</a> <a href="#g" id="c-close">close</a> </p>
+            </div>
+        </div>
+      </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>

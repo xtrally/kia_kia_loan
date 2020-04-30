@@ -1,0 +1,16 @@
+{
+  "name": "kia_kia_loan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://xtrally.github.io/kia_kia_loan",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
