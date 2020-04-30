@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kia-Kia Loan</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="img/kiakia-logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="/font/css/font-awesome.min.css"> -->
 </head>
 <body>
+
     <!-- PAGES -->
     <div class="pages-container">
         <div class="overlay-pages"></div>
@@ -19,7 +20,7 @@
             <div class="register-page">
                 <div class="top-form"> 
                     <div class="top-form-img">
-                    <img src="img/kiakia-logo-yellow.png" alt="">
+                        <a href="/dist/index.html"><img src="img/kiakia-logo-yellow.png" alt=""></a>
                     <h4>Request Loan</h4>
                      <i class="fa fa-file-text"></i>
                     </div>
@@ -50,13 +51,13 @@
                 <!-- Second Register Form -->
                 <form id="form2">
                     <div class="form-inner">
-                        <label for="mobile" id="f-password">Mobile No:</label>
-                        <input type="number" required id="mobile" placeholder="Enter Your Mobile">
+                        <label for="mobile" id="mid-label">Mobile No:</label>
+                        <input type="number" required id="mobile" placeholder="+2348008896091">
                         <div class="error-msg"></div>
                     </div>
                     <div class="form-inner">
                         <label for="email">DOB:</label>
-                        <input type="number" required placeholder="Date Of Birth 04/04/1990">
+                        <input type="number" required placeholder="Date Of Birth 04.04.1990">
                         <div class="error-msg"></div>
                     </div>
                     <div class="form-inner">
@@ -107,7 +108,7 @@
                         <select required name="" id="bank">
                             <option value="1">Access Bank PLC</option>
                             <option value="1">ECO BANK</option>
-                            <option value="1">FIRST BANK</option>
+                            <option value="1">FIRST BANK PLC</option>
                             <option value="1">FCMB</option>
                             <option value="1">GTB</option>
                             <option value="1">HERITAGE BANK</option>
@@ -120,13 +121,13 @@
                         <div class="error-msg"></div>
                     </div>
                     <div class="form-inner">
-                        <label for="email" id="c-password">Possible Amount:</label>
+                        <label for="email" id="low-label">Possible Amount:</label>
                         <input type="number" required class="number" placeholder="Up to how much ">
                         <div class="error-msg"></div>
                     </div>
 
                     <div class="form-inner">
-                        <label for="email" id="c-password">* Summary: Tell Us in brief why we should consider your application</label>
+                        <label for="email" id="long-label">* Summary : Tell us in brief why Kiakia-loan should consider your application.</label>
                         <textarea id="Summary cols="30" rows="10" placeholder="* optional"></textarea>
                         <div class="error-msg"></div>
                     </div>
@@ -145,11 +146,11 @@
                             </ul>
                           </div>
                         <h4>You're almost there!</h4>
-                        <p>As Kia-kia Ltd doesnt mandate a collateral, any documents or form of document. So in return, we required all our beneficiaries to complete a simple task to qualify for the application review. Even though it is a must, but we strongly advice you complete this task as it'll move up your application review way closer and you stand the chance of Kia-kia disbursing into your account under 20hours<p>
-                        <div class="error-msg"></div>
-
+                        <p>As Kia-kia Ltd doesn't mandate a collateral, a salary account or any form of legal documents. So in return, we requires all our beneficiaries to complete a simple task to qualify for the application review. Even though it is not a must, but we strongly advice you complete this task as it'll move up your application review way closer and you stand the chance of Kia-kia disbursing into your account under 20hours.<p>
+                            <span>Below is your task: Kia-kia Loan cares - Help us reach more people in need - Share to at least 10 groups or people on whatsapp.</span>
+                            <p>Please note, that if the share doesn't up to 10, you won't be able to proceed as the final submit will not be visible. make sure you share up to the required number of time, then the final submit link will reveal itself.</p>
                         <div class="share-to-whatsapp">
-                            <a id="whatsapp-btn" target="blank" href="http://whatsapp://send?text=Hey, Please open this website to buy this material at this price. www.xyz.com" data-original-title="whatsapp" rel="tooltip" class="btn btn-whatsapp" data-placement="left"><i class="fa fa-whatsapp"></i> Share On whatsapp <i class="fa fa-caret-right"></i></a>
+                            <a id="whatsapp-btn" target="blank" href="whatsapp://send?text=Never Go Broke Again During This Lock Down Period!!%0A%0ADo You Know You Can Get 2000- 50000 Quick Loan, Anytime, Anywhere.%0A%0A❌No BVN Submission,%0A%0AImageImage ❌No Interest%0A%0A❌No pApp Downloading,%0A%0A ❌No long wait times.%0A%0A*✅Just your smartphone *%0A%0A*✅ Instant approval *%0A%0A*✅3-6months repayment *%0A%0AGet the Loan within few minutes and you can choose to repay within 3 to 6 months.%0A%0AAPPLY NOW%0A%0Ahttps://kiakialoan.com" data-original-title="whatsapp" rel="tooltip" class="btn btn-whatsapp" data-placement="left"><i class="fa fa-whatsapp"></i> Share On whatsapp</a>
                         </div>
                     </div>
 
@@ -160,7 +161,7 @@
                  <form id="form5">
                     <div class="form-inner5">
                         <h4>Congratulations!</h4>
-                        <p>Your loan Request is being received. One of agent will contact for verification.</p>
+                        <p>Your loan Request is being received. One of our agents will contact you soon for verification.</p>
                         <div class="circling">
                             <i class="fa fa-check"></i>
                         </div>
@@ -170,6 +171,14 @@
                     <input class="login-btn" id="back-home" type="submit" value="Back To Home &#8592;" >
                    
                 </form>
+                <!-- Pop-up  -->
+                <div id="covid-pop">
+                    <div class="inner-covid-pop">
+                        <h4>Here's what to do!</h4>
+                        <p>We strongly advice user not to fill our loan request form more than once, even though we always ensure proper measures are taken when sorting out data response. But, in a case where you've submitted your request and you've not heard back from us for 24hours, then, that means something is not right, either, there was a typo error while you were inserting your details, or your request is at the bottom of our data table, in such a rare cases, then loan request resubmission can be considered. Note: Always make sure you waited at least 24hours before you re-apply so our filter bot won't flag your request as invalid.</p>
+                    </div>
+                    <a href="#" class="btn-covid">Re-submit Request &#8592;</a>
+                    </div>
                 </div>
         </div>
     </div>
@@ -208,7 +217,7 @@
                     <div class="left-banner-top">
                         <h4>Get a loan in less than 24 hours.</h4>
                         <p>Our Personal Loans and Micro-Business Loans are designed to conveniently meet your financial needs. So, whether you’re employed or run your own business, you can get a loan of up to ₦6,000,000.</p>
-                        <a href="#">Get Started</a>
+                        <a href="#" id="get-started">Get Started</a>
                     </div>
                     <div class="loan-calculator-container">
                         <div class="loan-calculator">
@@ -352,7 +361,7 @@
                     </g>
                 </svg>
                 <p>Interest</p>
-                <h3>From 5%</h3>
+                <h3>From 3%</h3>
              </div>
         </div>
     </section>
@@ -362,10 +371,13 @@
         <div class="eligi-overlay"></div>
         <div class="inner-eligi">
             <div class="eligibility">
-            <h4>Get up to #2million On Kia-Kia Loan Extra Package</h4>
+            <h4>Get up to #6million On Kia-Kia Loan Extra Package</h4>
             <p>Fill in your application | Undergo less down 24hours review | Your Account is loaded.</p>
-            <input type="text" placeholder="Enter Your Email">
-            <input type="submit" value="Check Eligibility">
+            <div id="below-form">
+                <input type="text" required class="below-email" placeholder="Enter Your Email Address">
+                <div class="error-msg"></div>
+                <input id="below-btn" type="submit" value="Request Instant Loan">
+            </div>
         </div>
         </div>
     </section>
@@ -394,12 +406,14 @@
                         <h4>Company</h4>
                         <a href="#">About Us</a>
                         <a href="#">Privacy</a>
-                        <a href="#">Contact Us</a>
+                        <a href=".">Contact Us</a>
                         </div>
                 </div>
                 <div class="right-foot2 blink">
                     <div class="inner-right-foot2">
-                        <i class="fa fa-whatsapp"></i>
+                        <a href="https://twitter.com/intent/tweet?text=Never Go Broke Again During This Lock Down Period!!%20Do You Know You Can Get 2000- 50000 Quick Loan, Anytime, Anywhere.%20❌No BVN Submission,%20ImageImage ❌No Interest%20❌No App Downloading,%20 ❌No long wait times.%20*✅Just your smartphone *%20*✅ Instant approval *%20*✅3-6months repayment *%20Get the Loan within few minutes and you can choose to repay within 3 to 6 months.%20APPLY NOW%20https://kiakialoan.com"><i class="fa fa-retweet" id="retweet"></i></a>
+                        <a href="whatsapp://send?text=Never Go Broke Again During This Lock Down Period!!%0A%0ADo You Know You Can Get 2000- 50000 Quick Loan, Anytime, Anywhere.%0A%0A❌No BVN Submission,%0A%0AImageImage ❌No Interest%0A%0A❌No App Downloading,%0A%0A ❌No long wait times.%0A%0A*✅Just your smartphone *%0A%0A*✅ Instant approval *%0A%0A*✅3-6months repayment *%0A%0AGet the Loan within few minutes and you can choose to repay within 3 to 6 months.%0A%0AAPPLY NOW%0A%0Ahttps://kiakialoan.com"><i class="fa fa-whatsapp" id="what-icon"></i></a>
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -407,6 +421,15 @@
     </footer>
 
     </main>
+
+    <div class="covid-bar">
+        <div class="covid-notice">
+            <div class="covid">
+                <p>COVID UPDATES: Dear customer, please note, that your loan request may take more than 24hours, which is very unusual, as our platforms is very congested with huge request due to the pandemic around. Please bear with us. If after 24hours, you still haven't heard from us, then <a href="#" id="help-link">Here's what might help</a> <a href="#g" id="c-close">close</a> </p>
+            </div>
+        </div>
+      </div>
+
 
     <script src="js/app.js"></script>
 </body>

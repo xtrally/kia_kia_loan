@@ -1,3 +1,27 @@
+// Show covid notification bar
+const covidBar = document.querySelector('.covid-bar');
+const covidClose = document.getElementById('c-close');
+covidBar.style.display = 'none'
+function notifications() {
+    setTimeout(function(){
+        covidBar.style.display = 'block'
+    }, 5000)
+}
+
+notifications()
+covidClose.addEventListener('click', () => {
+    covidBar.style.display = 'none'
+})
+// window.onscroll = function () { 
+//     "use strict";
+//     if (document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80) {
+//         covidBar.style.display = 'block'
+//     } 
+//     else {
+//         covidBar.style.display = 'none'
+//     }
+// };
+
 // Calculator
 let calculateBtn = document.getElementById('calculate');
 let results = document.getElementById('result');
@@ -71,13 +95,19 @@ loader.style.display = 'none'
 
 
 // Validation
+const covidPop = document.getElementById('covid-pop');
 const form1 = document.getElementById('form1');
 const form2 = document.getElementById('form2');
 const form3 = document.getElementById('form3');
 const form4 = document.getElementById('form4');
 const form5 = document.getElementById('form5');
 const email = document.getElementById('form1-email');
+const belowemail = document.querySelector('.below-email');
+const btnCovid = document.querySelector('.btn-covid');
 const mobile = document.getElementById('mobile');
+const belowForm = document.getElementById('below-form');
+const belowBtn = document.getElementById('below-btn');
+const helpLink = document.getElementById('help-link');
 const errorMsg = document.querySelector('.error-msg');
 
 // Forms Page 
@@ -85,8 +115,51 @@ form2.style.display = 'none';
 form3.style.display = 'none';
 form4.style.display = 'none';
 form5.style.display = 'none';
+covidPop.style.display = 'none';
+
+
+helpLink.addEventListener('click', function(){
+    
+    homepage.style.display = 'none';
+    pagesContainer.style.display = 'block';
+    form1.style.display = 'none';
+    form2.style.display = 'none';
+form3.style.display = 'none';
+form4.style.display = 'none';
+form5.style.display = 'none';
+    covidPop.style.display = 'block';
+
+})
+
+btnCovid.addEventListener('click', function(){
+    
+    loader.style.display = 'block';
+    homepage.style.display = 'none';
+    pagesContainer.style.display = 'block';
+    covidPop.style.display = 'none';
+
+    setTimeout(function(){
+        loader.style.display = 'none';
+        form1.style.display = 'block';
+    }, 2000)
+
+})
+
 
 // validateEmail
+belowBtn.addEventListener('click', validateBelowEmail)
+
+function validateBelowEmail() {
+    if(belowemail.value == '') {
+        console.log('empty')
+    } else {
+        homepage.style.display = 'none';
+        pagesContainer.style.display = 'block';
+        form1.style.display = 'block';
+    }
+}
+
+
 form1.addEventListener('submit', validateEmail)
 
 function validateEmail(e){
@@ -163,11 +236,13 @@ const loginBtn = document.getElementById('login-btn')
 const quick = document.getElementById('quick')
 const BackHome = document.getElementById('back-home')
 const mobileAct = document.getElementById('mobile-act')
+const getStarted = document.getElementById('get-started')
 
 pagesContainer.style.display = 'none'
 // pagesContainer.style.display = 'block'
 
 quick.addEventListener('click', registerForm)
+getStarted.addEventListener('click', registerForm)
 mobileAct.addEventListener('click', registerForm)
 BackHome.addEventListener('click', LoadHome)
 
@@ -179,12 +254,11 @@ function registerForm() {
 // load home
 function LoadHome() {
     loader.style.display = 'block';
+    pagesContainer.style.display = 'none'
     form5.style.display = 'none';
 
-        setTimeout(function(){
             homepage.style.display = 'block';
             loader.style.display = 'none';
-        }, 2000)
 }
 
 
@@ -192,11 +266,11 @@ function LoadHome() {
 // Whatsapp 10 clicks
 const confirmSignup = document.querySelector(".confirm-sign-up");
 const WhatsappBtn = document.getElementById('whatsapp-btn');
-  let count = 0;
-  confirmSignup.style.display = 'none'
-  count += 1;
+confirmSignup.style.display = 'none'
+let count = 0;
   WhatsappBtn.addEventListener('click', function() {
-      if(!count <= 3) {
+    count += 1;
+      if(count == 10) {
     confirmSignup.style.display = 'block'
   }
 })

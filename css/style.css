@@ -10,6 +10,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 .actives, .mobile-active {
     background: #fff;
     color: #0000FE;
@@ -35,6 +37,60 @@ body {
 .pages-container {
     display: none;
 }
+
+
+
+.covid-bar {
+    background: #333;
+    position: relative;
+    padding: 1rem;
+    height: 100px;
+}
+
+.covid-notice {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #c49704;
+    border-top: 2px solid #fff;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999999;
+} 
+
+
+.covid {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0.5rem;
+    /* border-radius: 5px; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.covid p {
+    font-size: 0.7rem;
+}
+
+.covid a {
+    color: #0000FE;
+    font-size: 0.6rem;
+}
+
+#c-close {
+    float: right;
+}
+
+
+
+
+
+
 
 
 
@@ -475,10 +531,12 @@ nav ul li .real-nav:hover::after {
     border-radius: 5px;
     background: #010065;
     color: #fff;
+    outline: none;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Footer  */
@@ -507,8 +565,8 @@ nav ul li .real-nav:hover::after {
     display: flex;
 }
 .logo-footer img {
-    max-width: 150px;
-    max-height: 70px;
+    width: 200px;
+    height: 150px;
 }
 
 .right-footer {
@@ -539,21 +597,29 @@ nav ul li .real-nav:hover::after {
     font-size: 0.7rem;
     margin: 1rem 0;
 }
+
+.right-foot2 {
+    background: #ffc604;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 .inner-right-foot2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .right-foot2 i {
-    font-size: 3rem;
-    color: #0ec143;
-    padding: 1rem 1.2rem;
+    margin: 0.4rem;
+    font-size: 1.5rem;
+    color: #333;
     background: #ffc604;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
+
+
 
